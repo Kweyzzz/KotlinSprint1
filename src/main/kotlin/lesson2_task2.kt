@@ -1,9 +1,14 @@
 package org.example
 
-fun main(){
-    val salaryOfPermanentEmployees:Int = 50 * 30000
-    val generalEmployeeExpenses:Int = salaryOfPermanentEmployees + (30 * 20000)
-    val totalEmployees = 50 + 30
+fun main() {
+    val permanentEmployees = 50
+    val salaryOneEmployee = 30000
+    val trainees = 30
+    val salaryOneTrainees = 20000
+    val salaryOfPermanentEmployees: Int = permanentEmployees * salaryOneEmployee
+
+    val generalEmployeeExpenses: Int = salaryOfPermanentEmployees + (trainees * salaryOneTrainees)
+    val totalEmployees = permanentEmployees + trainees
     val averageSalaryPerEmployee:Int = generalEmployeeExpenses/totalEmployees
 
     println(salaryOfPermanentEmployees)
