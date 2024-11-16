@@ -9,10 +9,8 @@ fun main() {
 
     val generalEmployeeExpenses: Int = salaryOfPermanentEmployees + (trainees * salaryOneTrainees)
     val totalEmployees = permanentEmployees + trainees
-    val averageSalaryPerEmployee:Int = generalEmployeeExpenses/totalEmployees
-
+    val averageSalaryPerEmployee: Int = generalEmployeeExpenses / totalEmployees
     println(salaryOfPermanentEmployees)
     println(generalEmployeeExpenses)
     println(averageSalaryPerEmployee)
-
 }
